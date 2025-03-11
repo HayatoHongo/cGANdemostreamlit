@@ -41,7 +41,7 @@ class Generator(nn.Module):
 # モデルのロード
 latent_dim = 10
 n_classes = 10
-generator = torch.load("GANgenerator.pth", map_location=device)
+generator = torch.load("GANgenerator.pth", map_location=device, weights_only=False)
 generator.to(device)
 generator.eval()
 
