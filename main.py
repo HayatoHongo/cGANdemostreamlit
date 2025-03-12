@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 # デバイス設定
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+st.write(f"Using device: {device}")
 
 # モデルの定義（Generator）
 class Generator(nn.Module):
